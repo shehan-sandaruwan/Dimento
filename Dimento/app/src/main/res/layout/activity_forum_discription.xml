@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shehandinuka.dimento.ForumDescription" android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b0bec5">
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape"
+            android:onClick="onClick"
+            android:text="add"
+            android:textColor="#ffffff" />
+
+
+        <TextView
+            android:id="@+id/selectcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/add"
+            android:layout_alignBottom="@+id/add"
+            android:layout_alignParentStart="true"
+            android:text="@string/selected_item"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/categoryList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:dividerHeight="5dp" />
+
+</RelativeLayout>
+
