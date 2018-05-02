@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context="com.example.shehandinuka.dimento.Create_account">
+
+    <RelativeLayout
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:background="#00000000">
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:textColorHint="#607d8b" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/telephone"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:textColorHint="#607d8b" />
+
+        <EditText
+            android:id="@+id/telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/email"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/telephone"
+            android:inputType="textPersonName"
+            android:textColorHint="#607d8b"
+            tools:ignore="TextFields" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#607d8b" />
+
+
+        <Button
+            android:id="@+id/regsubmit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radioGroup1"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape"
+            android:shape="rectangle"
+            android:text="@string/regsubmit"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/pWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#607d8b"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            tools:ignore="RelativeOverlap">
+
+
+            <RadioButton
+                android:id="@+id/type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="3D Model Designer" />
+
+            <RadioButton
+                android:id="@+id/type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="Individual Customer" />
+
+            <RadioButton
+                android:id="@+id/type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/radioGroup1"
+                android:layout_alignParentStart="true"
+                android:text="Business Organization" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

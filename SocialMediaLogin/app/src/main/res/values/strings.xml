@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SocialMediaLogin</string>
+    <string name="device_admin_enabled">device_admin_enabled</string>
+    <string name="device_admin_disabled">device_admin_disabled</string>
+</resources>

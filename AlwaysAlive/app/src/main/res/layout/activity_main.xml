@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shehandinuka.alwaysalive.MainActivity">
+
+    <Button
+        android:id="@+id/buttontop"
+        android:text="start service"
+        android:layout_width = "match_parent"
+        android:layout_height ="wrap_content"
+        android:layout_alignParentTop = "true"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonbtm"
+        android:text="End Service"
+        android:layout_below="@+id/buttontop"
+        android:textSize="20dp"
+        android:padding="5dp"/>
+
+
+</RelativeLayout>
